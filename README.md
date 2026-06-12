@@ -22,7 +22,7 @@ https://katomaran-api.onrender.com
 
 ### GitHub Repository
 
-https://github.com/Sarvesh2905/katomoran-
+https://github.com/Sarvesh2905/Katomaran-Technologies
 
 ### Demo Video
 
@@ -558,8 +558,8 @@ MongoDB Atlas
 ## Clone Repository
 
 ```bash
-git clone https://github.com/Sarvesh2905/katomoran-.git
-cd katomoran-
+git clone https://github.com/Sarvesh2905/Katomaran-Technologies
+cd Katomaran-Technologies
 ```
 
 ---
