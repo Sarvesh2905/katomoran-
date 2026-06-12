@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katomaran — URL Shortener & Link Analytics SaaS</title>
+    <meta name="description" content="Katomaran is a premium URL shortener with deep link analytics. Track clicks, devices, countries, referrers, and more with beautiful real-time dashboards." />
+    <meta property="og:title" content="Katomaran — URL Shortener & Link Analytics" />
+    <meta property="og:description" content="Shorten links, generate QR codes, and track every click with premium analytics." />
+    <meta property="og:type" content="website" />
+    <!-- Prevent FOUC — apply theme before React hydration -->
+    <script>
+      (function() {
+        const t = localStorage.getItem('katomaran-theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
