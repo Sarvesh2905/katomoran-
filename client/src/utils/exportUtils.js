@@ -157,7 +157,16 @@ export const exportToPDF = (link, analytics) => {
     )
   }
 
-  doc.save(`katomaran-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.pdf`)
+  const filename = `katomaran-${link.shortCode}-${format(new Date(), 'yyyy-MM-dd')}.pdf`
+  const blob = doc.output('blob')
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = filename
+  document.body.appendChild(a)
+  a.click()
+  document.body.removeChild(a)
+  URL.revokeObjectURL(url)
 }
 
 // ─── CSV Export (client-side) ─────────────────────────────────────────────────

@@ -8,14 +8,23 @@ export const QRModal = ({ isOpen, onClose, qrCode, shortUrl }) => {
   const [copied, setCopied] = useState(false)
   const { addToast } = useToast()
 
-  const handleDownload = () => {
-    const a = document.createElement('a')
-    a.href = qrCode
-    a.download = `qrcode-${shortUrl?.split('/').pop()}.png`
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    addToast('QR Code downloaded!', 'success')
+  const handleDownload = async () => {
+    try {
+      // Convert base64 data URL → Blob so browsers respect the download filename
+      const res = await fetch(qrCode)
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `katomaran-qr-${shortUrl?.split('/').pop() || 'code'}.png`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+      URL.revokeObjectURL(url)
+      addToast('QR Code downloaded!', 'success')
+    } catch {
+      addToast('Download failed', 'error')
+    }
   }
 
   const handleCopyUrl = async () => {
