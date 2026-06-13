@@ -610,67 +610,63 @@ NODE_ENV=production
 
 ## Landing Page
 
-![Landing Page](./screenshots/landing-page.png)
+![Landing Page](./landing-page.png)
 
 ## Login Page
 
-![Login](./screenshots/login-page.png)
+![Login](./login-page.png)
 
 ## Dashboard Overview
 
-![Dashboard](./screenshots/dashboard-overview.png)
+![Dashboard](./dashboard-overview.png)
 
 ## URL Creation
 
-![URL Creation](./screenshots/create-url.png)
+![URL Creation](./create-url.png)
 
 ## Analytics Dashboard
 
-![Analytics Dashboard](./screenshots/analytics-dashboard.png)
+![Analytics Dashboard](./analytics-dashboard.png)
 
-## Device Analytics
+## Device, Browser & Referrer Analytics
 
-![Device Analytics](./screenshots/device-analytics.png)
-
-## Browser Analytics
-
-![Browser Analytics](./screenshots/browser-analytics.png)
+![Device Browser Referrer Analytics](./device-browser-referrer-analytics.png)
 
 ## Geographic Analytics
 
-![Geographic Analytics](./screenshots/geographic-analytics.png)
-
-## Referrer Analytics
-
-![Referrer Analytics](./screenshots/referrer-analytics.png)
+![Geographic Analytics](./geographic-analytics.png)
 
 ## QR Code Generation
 
-![QR Generator](./screenshots/qr-generator.png)
+![QR Generator](./qr-generator.png)
 
-## Public Stats Page
+## Platform Insights Engine
 
-![Public Stats](./screenshots/public-stats.png)
+![Platform Insights](./platform-insights-section.png)
 
 ## Bulk Upload
 
-![Bulk Upload](./screenshots/bulk-upload.png)
+![Bulk Upload](./bulk-upload.png)
 
-## Theme System
+## Theme System - Dark Mode
 
-![Theme System](./screenshots/theme-system.png)
+![Theme Dark](./theme-system-dark.png)
+
+## Theme System - Light Mode
+
+![Theme Light](./theme-system-light.png)
 
 ## CSV Export
 
-![CSV Export](./screenshots/csv-export.png)
+![CSV Export](./export-features-csv.png)
 
 ## PDF Export
 
-![PDF Export](./screenshots/pdf-export.png)
+![PDF Export](./export-features-pdf.png)
 
 ## MongoDB Collections
 
-![MongoDB](./screenshots/mongodb-collections.png)
+![MongoDB](./mongodb-collections.png)
 
 ---
 
